@@ -1,0 +1,67 @@
+.footer {
+  background: var(--gray-900);
+  color: var(--gray-300);
+  margin-top: auto;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 2.5rem;
+}
+
+.brand .logo {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+}
+
+.brand p {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--gray-400);
+}
+
+.links h4, .contact h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.links a {
+  font-size: 0.875rem;
+  color: var(--gray-400);
+  transition: color 0.15s;
+}
+.links a:hover { color: var(--white); }
+
+.contact { display: flex; flex-direction: column; gap: 0.5rem; }
+.contact p { font-size: 0.875rem; color: var(--gray-400); }
+
+.bottom {
+  border-top: 1px solid var(--gray-700);
+  text-align: center;
+  padding: 1.25rem 1.5rem;
+}
+.bottom p { font-size: 0.8rem; color: var(--gray-500); }
+
+@media (max-width: 768px) {
+  .inner { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .inner { grid-template-columns: 1fr; gap: 1.5rem; }
+}
