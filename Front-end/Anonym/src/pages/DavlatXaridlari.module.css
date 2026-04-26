@@ -1,0 +1,155 @@
+.page {
+  min-height: calc(100vh - 68px);
+  background: #fafafa;
+  padding: 3rem 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.inner {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 1.25rem;
+}
+
+.header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 0.375rem;
+}
+
+.header p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Accordion */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  padding: 1.1rem 1.25rem;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.12s;
+}
+
+.trigger:hover {
+  background: #f5f5f5;
+}
+
+.itemOpen .trigger {
+  background: #f9f9f9;
+}
+
+.qNum {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #111;
+  min-width: 72px;
+}
+
+.qPeriod {
+  flex: 1;
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.qCount {
+  font-size: 0.775rem;
+  color: #999;
+  white-space: nowrap;
+}
+
+.arrow {
+  font-size: 1.25rem;
+  color: #888;
+  line-height: 1;
+  flex-shrink: 0;
+  user-select: none;
+  margin-left: 0.5rem;
+}
+
+/* Body */
+.body {
+  border-top: 1px solid #efefef;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* File row */
+.fileRow {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  padding: 0.875rem 1.25rem;
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid #f3f3f3;
+  transition: background 0.12s;
+}
+
+.fileRow:last-child {
+  border-bottom: none;
+}
+
+.fileRow:hover {
+  background: #f5f5f5;
+}
+
+.fileIcon {
+  width: 28px;
+  height: 28px;
+  color: #666;
+  flex-shrink: 0;
+}
+
+.fileName {
+  flex: 1;
+  font-size: 0.875rem;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.downloadHint {
+  font-size: 0.775rem;
+  color: #aaa;
+  flex-shrink: 0;
+}
+
+@media (max-width: 560px) {
+  .header h1 { font-size: 1.375rem; }
+  .qPeriod { display: none; }
+  .trigger { padding: 0.9rem 1rem; }
+  .fileRow { padding: 0.75rem 1rem; }
+}

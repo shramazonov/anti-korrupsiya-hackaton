@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nikneym": "xodim",
+      "parol": "xodim2026",
+      "role": "staff"
+    },
+    {
+      "nikneym": "ali",
+      "parol": "12345678Q",
+      "id": 2
+    }
+  ],
+  "complaints": [
+    {
+      "trackingId": "AK-2026-5747",
+      "kategoriya": "Buxgalteriya",
+      "sana": "2026-04-24",
+      "tavsif": "Korrupsiyaga yo'l qo'ydi shu buxgalter Yusupov Sardor Nematovich",
+      "shaxslar": "Yusupov Sardor Nematovich (Buxgalter-iqtisodchi)",
+      "userNikneym": "ali",
+      "holat": "Ko'rib chiqilmoqda",
+      "sanaYuborildi": "2026-04-25T21:06:00.241Z",
+      "id": 1,
+      "javob": "Ko'rib chiqilmoqda",
+      "javobSana": "2026-04-25T21:06:52.793Z",
+      "javobchi": "xodim"
+    }
+  ],
+  "ratings": [
+    {
+      "employeeId": 2,
+      "employeeName": "Toshmatova Dilnoza Hamidovna",
+      "category": "Buxgalteriya",
+      "stars": 4,
+      "comment": "",
+      "date": "2026-04-25T18:20:59.330Z",
+      "id": 1
+    },
+    {
+      "employeeId": 2,
+      "employeeName": "Toshmatova Dilnoza Hamidovna",
+      "category": "Buxgalteriya",
+      "stars": 5,
+      "comment": "",
+      "date": "2026-04-25T19:17:06.601Z",
+      "id": 2
+    },
+    {
+      "employeeId": 7,
+      "employeeName": "Xolmatov Jasur Ilhomovich",
+      "category": "Ofis registrator",
+      "stars": 5,
+      "comment": "",
+      "date": "2026-04-25T23:14:46.207Z",
+      "id": 3
+    }
+  ]
+}
